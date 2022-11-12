@@ -19,4 +19,4 @@ jobs:
     - name: Restore Packages
       run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
     - name: Build Library
-      run: dotnet build "${{ env.WORKING_DIRECTORY }}" -r win-x64 --configuration ${{ env.CONFIGURATION }} --no-restore
+      run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
