@@ -1,0 +1,22 @@
+name: Build Library
+on:
+  push:
+    branches:
+    - main
+env:
+  CONFIGURATION: Release
+  DOTNET_CORE_VERSION: 7.0.x
+  WORKING_DIRECTORY: src/PTI.Microservices.Library.AzureComputerVision
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+    - name: Restore Packages
+      run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+    - name: Build Library
+      run: dotnet build "${{ env.WORKING_DIRECTORY }}" -r win-x64 --configuration ${{ env.CONFIGURATION }} --no-restore
