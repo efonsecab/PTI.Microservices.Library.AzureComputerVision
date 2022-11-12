@@ -6,10 +6,10 @@
     <Company>PTI Costa Rica</Company>
     <Copyright>PTI Costa Rica</Copyright>
     <Description>Cloud Services library designed to be consumed in Microservices</Description>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <Version>7.0.0.1</Version>
+    <Version>7.0.0.2</Version>
     <PackageProjectUrl>https://github.com/efonsecab/PTI.Microservices.Library.AzureComputerVision</PackageProjectUrl>
     <AnalysisLevel>latest</AnalysisLevel>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
