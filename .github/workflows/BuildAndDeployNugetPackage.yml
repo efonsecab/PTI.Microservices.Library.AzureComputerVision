@@ -23,6 +23,6 @@ jobs:
     - name: Build Library
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Pack Project
-      run: dotnet pack "${{ env.WORKING_DIRECTORY }}" -- no-restore --no-build --configuration ${{ env.CONFIGURATION }} --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+      run: dotnet pack "${{ env.WORKING_DIRECTORY }}" --no-restore --no-build --configuration ${{ env.CONFIGURATION }} --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
     - name: Push Package
       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.NUGET }} -s ${{ env.NUGET_SOURCE_URL }}
