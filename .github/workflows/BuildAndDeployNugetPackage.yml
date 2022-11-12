@@ -6,7 +6,7 @@ on:
 env:
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 7.0.x
-  WORKING_DIRECTORY: src/PTI.Microservices.Library.AzureComputerVision
+  WORKING_DIRECTORY: src/PTI.Microservices.Library.AzureComputerVision/PTI.Microservices.Library.AzureComputerVision.csproj
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
   NUGET_SOURCE_URL: https://api.nuget.org/v3/index.json
 jobs:
