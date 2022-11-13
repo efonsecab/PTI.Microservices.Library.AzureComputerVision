@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <Version>7.0.0.2</Version>
+    <Version>7.0.0.3</Version>
     <PackageProjectUrl>https://github.com/efonsecab/PTI.Microservices.Library.AzureComputerVision</PackageProjectUrl>
     <AnalysisLevel>latest</AnalysisLevel>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
