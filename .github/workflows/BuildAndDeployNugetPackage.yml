@@ -1,4 +1,4 @@
-name: Build Library
+name: Build And Deploy Nuget Package
 on:
   push:
     branches:
